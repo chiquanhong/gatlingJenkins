@@ -21,7 +21,7 @@ class CheckResponseCode extends Simulation {
       .post("/computers")
       .check(status.not(404), status.not(500))
       .check(bodyString.saveAs("responseBody"))
-      .formParam("name", "TestQuan" + Math.random())
+      .formParam("name", "TestQuan2" + Math.random())
       .formParam("introduced", "1982-12-21")
       .formParam("discontinued", "1990-01-01")
       .formParam("company", "1")
